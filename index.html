@@ -1,0 +1,59 @@
+<!--
+    MEDIA QUERY IS AN EFFICIENT WAY TO MAKE THE RESPONSIVE TO VARIOUS SCREEN SIZES.IT IS A VERY PRIMITIVE AND INSTANT METHOD YET VERY USEFUL.
+
+    The way the code is written to achieve responsiveness using media queries is demonstrated below;
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA QUERY</title>
+    <style>
+
+        .class{
+            background-color: burlywood;
+            width: 500px;
+            height: 500px;
+            float: left;
+        }
+
+        img{
+            float: left;
+            margin: 20px;
+            padding: 5px;
+        }
+        @media (min-width: 481px) and (max-width: 1200px){   /*Here the css inside the media query is applied to all the devices with the above screen size and for all the devices that do not fall uder this category, the default css written inside style is applied*/
+            .class{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        <header style="text-align: center;"><h1>MEDIA QUERY</h1></header>
+        <img src="../8.1+CSS+Float/cat.jpeg" alt="cat">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat enim nemo vero aut nam beatae obcaecati quisquam odit tempore ut natus earum ullam, unde temporibus ea atque fugit soluta placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, impedit eum distinctio officiis labore, eaque quasi cupiditate quam culpa enim modi repellat? Pariatur ipsa perferendis dignissimos itaque quam. Fugit, error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum reiciendis minus non soluta nemo accusamus quae, enim fuga necessitatibus voluptatum placeat id voluptates dicta eos sapiente. Quos, expedita amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deserunt, consequuntur porro culpa provident officia perspiciatis perferendis, dolor, illo atque distinctio similique aliquid tenetur nisi? Soluta tempore alias aliquam eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia dolores ullam doloremque corrupti excepturi architecto ex autem aspernatur illum porro, hic repellat tempora, maxime nemo vitae fuga itaque aliquam molestias!</p>
+    </div>
+</body>
+</html>
+
+<!--
+    The way to write a media query is, starts with an @media and the required screen size is writtrn inside () brackets.
+
+    We can also use media query to print the webpage, as shown below
+
+    @media print(orientaiton: landscape){
+        body{
+
+        }
+    }
+
+    THE CSS WRITTEN INSIDE MEDIA QUERY TAKES AN HAND OVER THE DEFAULT CSS WRITTEN BEFORE WHEN THE CONDITION WRITTEN INSIDE MEDIA QUERY IS SATISFIED.IF NOT THEN THE DEFAULT CSS IS PUT INTO ACTION.
+
+    NOT JUST THE SCREEN WIDTH OR HIEGHT, WE CAN ALSO MAKE OUR WEBSITES RESPONSIVE W.R.T TO OTHER ELEMENTS OF THE PAGE LIKE THE DISPLAY/POSITIONING/FLOAT ETC.
+-->
